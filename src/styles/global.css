@@ -19,3 +19,19 @@
 @theme {
   --font-sans: 'Lora', 'sans-serif';
 }
+
+section {
+  @apply flex flex-col items-center;
+}
+
+p {
+  @apply text-center;
+}
+
+.text-container {
+  @apply flex flex-row items-center gap-2;
+}
+
+.font-fancy {
+  font-family: 'Ephesis', sans-serif;
+}

@@ -9,10 +9,18 @@ import '../styles/global.css'
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Claudia y César | Nuestra Boda</title>
 	</head>
-	<body>
-		<slot />
+	<body class="bg-[#fff6ed]">
+		<main class="sm:hidden">
+			<slot />
+		</main>
+		<section class="gap-8 justify-center collapse sm:visible h-0 sm:h-full">
+			<h1 class="text-8xl font-fancy text-[#ae0055] hidden sm:block">Claudia y César</h1>
+			<p class="text-2xl m-24 hidden sm:block">
+				Abrir la invitación desde el celular para ver el contenido completo.
+			</p>
+		</section>
 	</body>
 </html>
 
