@@ -1,0 +1,37 @@
+<section class="bg-[#ae0055] mx-4 px-8 py-16 text-white">
+  <h2 class="text-2xl text-center">TE INVITAMOS A NUESTRA BODA</h2>
+
+  <p class="my-4">Último día para confirmar asistencia: 02 de marzo.</p>
+
+  <input 
+    id="nombre" 
+    type="text" 
+    placeholder="Escribe tu nombre" 
+    class="border mb-8 border-gray-400 bg-white placeholder:text-[#ea7c80] rounded-lg p-2 text-[#ae0055]"
+  />
+
+  <a 
+    id="whatsapp-link"
+    href="#" 
+    target="_blank"
+    class="text-lg rounded-2xl border px-12 py-6"
+  >
+    Confirmar
+  </a>
+</section>
+
+<script>
+  const input = document.getElementById('nombre');
+  const link = document.getElementById('whatsapp-link');
+
+  const phoneNumber = '5216864057656';
+
+  input?.addEventListener('input', () => {
+    const name = input.value.trim();
+    const message = `Hola, soy ${name || '...'}\n¡Confirmo mi asistencia para su boda!`;
+    const encodedMessage = encodeURIComponent(message)
+
+    const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+    link.href = url;
+  });
+</script>
