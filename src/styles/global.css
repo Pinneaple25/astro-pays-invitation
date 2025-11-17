@@ -16,8 +16,16 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'EBGaramond';
+  src: url('/fonts/EBGaramond-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
-  --font-sans: 'Lora', 'sans-serif';
+  --font-sans: 'EBGaramond', 'sans-serif';
 }
 
 section {
