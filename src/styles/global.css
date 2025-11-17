@@ -28,7 +28,7 @@
   --font-sans: 'EBGaramond', 'sans-serif';
 }
 
-section {
+section, footer {
   @apply flex flex-col items-center p-12;
 }
 
