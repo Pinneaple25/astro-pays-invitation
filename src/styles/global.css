@@ -29,7 +29,7 @@
 }
 
 section {
-  @apply flex flex-col items-center;
+  @apply flex flex-col items-center p-12;
 }
 
 p {
@@ -38,6 +38,10 @@ p {
 
 .text-container {
   @apply flex flex-row items-center gap-2;
+}
+
+.text-name {
+  @apply uppercase tracking-wider;
 }
 
 .font-fancy {
