@@ -4,12 +4,9 @@ import Layout from '../layouts/Layout.astro';
 import paysPicture from '../assets/images/pays.png';
 import fancyPays from '../assets/images/fancy-pays.jpg';
 import WhatsappConfirmation from '../components/Whatsapp-Confirmation.astro';
-
-var audioUrl = "https://s3.eu-central-1.wasabisys.com/audio.com.audio/transcoding/76/49/1825130868614976-1825130868659451-1825130883626588.mp3?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=W7IA3NSYSOQIKLY9DEVC%2F20251111%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20251111T070330Z&X-Amz-SignedHeaders=host&X-Amz-Expires=518400&X-Amz-Signature=80cb02b7afe2c4e785ec3bd0c30f62076065f9bb2386cd0890e38031aeeac90d";
 ---
 
 <Layout>
-	<audio src={audioUrl} autoplay loop/>
 	<!-- Cabecera -->
 	<section class="relative w-full">
 		<Image
