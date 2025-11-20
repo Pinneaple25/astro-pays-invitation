@@ -51,3 +51,7 @@ p {
 .font-fancy {
   font-family: 'Ephesis', sans-serif;
 }
+
+.audio-player::-webkit-media-controls-enclosure {
+  @apply bg-[#fff6edd4] rounded-2xl
+}
