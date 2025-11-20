@@ -32,6 +32,10 @@ section, footer {
   @apply flex flex-col items-center p-12;
 }
 
+footer {
+  @apply collapse gap-8 h-0 justify-center p-0 sm:h-full sm:visible;
+}
+
 p {
   @apply text-center;
 }
